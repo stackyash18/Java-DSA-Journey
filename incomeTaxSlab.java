@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class percentCalculator{
+public class incomeTaxSlab{
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
