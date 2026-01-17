@@ -34,5 +34,7 @@ public class percentCalculator{
    
     float percentage = (obtainedMarks / totalMarks) * 100; 
     System.out.println("Your percentage is: " + percentage + "%"); 
+
+    input.close();
   }
 }
