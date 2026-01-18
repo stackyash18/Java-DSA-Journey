@@ -9,7 +9,7 @@ public class findingTheLeapYear {
           isLeapYear = true;
         }
       } else {
-        isLeapYear = true;x
+        isLeapYear = true;
       }
     }
 
