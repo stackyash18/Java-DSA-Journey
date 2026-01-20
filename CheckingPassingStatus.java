@@ -1,36 +1,35 @@
 import java.util.Scanner;
 
 public class CheckingPassingStatus {
-  public static void main(String[] args) {
-    
-    Scanner input = new Scanner(System.in);
-    System.out.println("Enter marks obtained in Physics:");
-    int physicsMarks = input.nextInt();
-    float physicsPercent = (physicsMarks / 80.0f) * 100;
+    public static void main(String[] args) {
 
-    System.out.println("Enter marks obtained in Chemistry:");
-    int chemistryMarks = input.nextInt();
-    float chemistryPercent = (chemistryMarks / 80.0f) * 100;
+        Scanner input = new Scanner(System.in);
 
-    System.out.println("Enter marks obtained in Mathematics:");
-    int mathematicsMarks = input.nextInt();
-    float mathematicsPercent = (mathematicsMarks / 80.0f) * 100;
+        System.out.print("Enter marks obtained in Physics (out of 80): ");
+        int physicsMarks = input.nextInt();
+        float physicsPercent = (physicsMarks / 80.0f) * 100;
 
-    int obtainedMarks = physicsMarks + chemistryMarks + mathematicsMarks;
+        System.out.print("Enter marks obtained in Chemistry (out of 80): ");
+        int chemistryMarks = input.nextInt();
+        float chemistryPercent = (chemistryMarks / 80.0f) * 100;
 
-    int totalMarks = 240;
+        System.out.print("Enter marks obtained in Mathematics (out of 80): ");
+        int mathsMarks = input.nextInt();
+        float mathsPercent = (mathsMarks / 80.0f) * 100;
 
-    float percentage = (obtainedMarks / (float)totalMarks) * 100;
-    System.out.println("Your overall percentage is: " + percentage + "%");
-    
-    if (percentage >= 40.0 && physicsMarks >= 33.0 && chemistryMarks >= 33.0 && mathematicsMarks >= 33.0) {
-      System.out.println("Congratulations! You have passed.");
-    } else {
-      System.out.println("Sorry, you have failed.");
-      
+        int obtainedMarks = physicsMarks + chemistryMarks + mathsMarks;
+        int totalMarks = 240;
+
+        float percentage = (obtainedMarks / (float) totalMarks) * 100;
+
+        System.out.println("\nOverall Percentage: " + percentage + "%");
+
+        if (percentage >= 40.0 && physicsPercent >= 33.0 && chemistryPercent >= 33.0 && mathsPercent >= 33.0) {
+            System.out.println("Congratulations! You have passed.");
+        } else {
+            System.out.println("Sorry, you have failed.");
+        }
+
+        input.close();
     }
-  }
 }
-
-
-// Write a program to finf out Whether a Student is pass or fail; if it requires total 40% and at least 33% in each subject to pass. assume 3 subjects and take marks as input from the user. //

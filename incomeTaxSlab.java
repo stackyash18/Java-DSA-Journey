@@ -30,5 +30,6 @@ public class incomeTaxSlab{
       System.out.println("Your income tax is: " + tax + " lakhs");
     
    }
+    input.close();
   }
 }

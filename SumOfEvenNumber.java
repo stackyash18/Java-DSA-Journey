@@ -19,5 +19,6 @@ public class SumOfEvenNumber {
     }
 
     System.out.println("Sum of even numbers from 1 to " + n + " is: " + sum);
+    input.close();
   }
 }

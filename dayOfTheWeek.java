@@ -16,5 +16,6 @@ public class dayOfTheWeek {
       case 7 -> System.out.println("Sunday");
       default -> System.out.println("Invalid Day Number");
     }
+    input.close();
    }
 }

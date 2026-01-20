@@ -12,5 +12,6 @@ public class TableOfnNumber {
     {
       System.out.println(n +  " x " + i + " = " + (n * i));
     }
+    input.close();
   }
 }
