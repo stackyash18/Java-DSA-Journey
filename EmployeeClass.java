@@ -13,18 +13,18 @@ public class EmployeeClass {
     
     // Instantiating the Employee class 
     Employee Yash = new Employee();
-    Employee Arun = new Employee(); 
+    Employee Arjun = new Employee(); 
 
 
     //Setting the Attributes
     Yash.id = 1829;
     Yash.name = "Yash Tomar";
-    Arun.id = 1831;
-    Arun.name = "Arun Kumar";
+    Arjun.id = 1831;
+    Arjun.name = "Arjun Kumar";
  
     //Printing the Attributes
     Yash.printDetails();
-    Arun.printDetails();
+    Arjun.printDetails();
     
   }
 }
