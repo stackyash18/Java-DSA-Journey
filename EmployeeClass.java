@@ -1,30 +1,30 @@
-
- class Employee {
-int id;
-String name;
-public void printDetails() {
-  System.out.println("\nID: " + id + "\nName: " + name + "\n");
-}
- }
 public class EmployeeClass {
+ static  class Employee {
+    String name;
+    int id;
+    int salary;
+
+    public int  getSalary()
+    {
+      return salary;
+    }
+
+    public String getName()
+    {
+      return name;
+    }
+
+    public void setName(String n) {
+      name =  n;
+     
+  } 
+}
   public static void main(String[] args) {
-
-    System.out.println("This is custom java class");
     
-    // Instantiating the Employee class 
     Employee Yash = new Employee();
-    Employee Arjun = new Employee(); 
-
-
-    //Setting the Attributes
-    Yash.id = 1829;
-    Yash.name = "Yash Tomar";
-    Arjun.id = 1831;
-    Arjun.name = "Arjun Kumar";
- 
-    //Printing the Attributes
-    Yash.printDetails();
-    Arjun.printDetails();
-    
+    Yash.setName("Yash Tomar");
+    Yash.salary = 50000;
+    System.out.println("Employee Name: " + Yash.getName() );
+    System.out.println("Employee Salary: " + Yash.getSalary());
   }
 }
