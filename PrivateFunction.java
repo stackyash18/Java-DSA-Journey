@@ -43,9 +43,7 @@ public class PrivateFunction {
     System.out.println("Name: " + Harry.getName());
     System.out.println("Id: " + Harry.getId());
 
+    input.close();
   }
-
- 
- 
 
 }
