@@ -32,8 +32,8 @@ public class PrivateFunction {
     public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     
-    PrivateFunction pf = new PrivateFunction();
-    MyEmployee Harry = pf.new MyEmployee();
+    PrivateFunction outer = new PrivateFunction();
+    MyEmployee Harry = outer.new MyEmployee();
     String name = input.nextLine();
     Harry.setName(name);
     
