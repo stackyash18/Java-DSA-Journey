@@ -11,7 +11,12 @@ public class StonePaperScissor {
         int userScore = 0;
         int systemScore = 0;   
 
-        // 0-Stone, 1-Paper, 2-Scissor
+        // 0-Stone, 
+
+        // 1-Paper,
+
+        //  2-Scissor
+        
         while (noOfRounds <= 3) {
 
             int systemNumber = rand.nextInt(3); // 0,1,2
