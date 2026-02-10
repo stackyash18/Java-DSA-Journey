@@ -18,7 +18,7 @@ public class CirclleUsingPrivateFunc {
 
     private void calculateArea() {
         area = Math.PI * radius * radius;
-    }  
+    }    
 
     private void calculateCircumference() {
         circumference = 2 * Math.PI * radius;
