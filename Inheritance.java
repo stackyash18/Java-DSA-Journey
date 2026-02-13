@@ -36,6 +36,10 @@
 public class Inheritance {
   public static void main(String[] args)
   {
-    
+    Derived d = new Derived();
+    d.setX(10);
+    d.setY(20);
+    System.out.println("The value of x is: " + d.getX());
+    System.out.println("The value of y is: " + d.getY());
   }
 }
