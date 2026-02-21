@@ -41,5 +41,6 @@ public class ConstructorsInInheritance {
   public static void main(String[] args) {
   GrandChild gc = new GrandChild();
   GrandChild gc1 = new GrandChild(30);
+  
   }
 }
